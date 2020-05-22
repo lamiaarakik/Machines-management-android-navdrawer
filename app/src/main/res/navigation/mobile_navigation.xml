@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_machine">
+
+    <fragment
+        android:id="@+id/nav_machine"
+        android:name="com.example.exo2.MachineFragment"
+        android:label="Liste Des Machines"
+        tools:layout="@layout/fragment_itemmachine_list" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.exo2.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.exo2.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/fragment_statistics1"
+        android:name="com.example.exo2.Statistics1Fragment"
+        android:label="Statistics1"
+        tools:layout="@layout/fragment_statistics1" />
+    <fragment
+        android:id="@+id/fragment_statistics2"
+        android:name="com.example.exo2.Statistics2Fragment"
+        android:label="Statistics2"
+        tools:layout="@layout/fragment_statistics2" />
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.exo2.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.exo2.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.exo2.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+</navigation>
